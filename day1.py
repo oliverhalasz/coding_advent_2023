@@ -1,3 +1,7 @@
+import time
+
+start = time.time()
+
 SUBSTINGS = ["one", "two", "three", "four",
              "five", "six", "seven", "eight", "nine"]
 
@@ -45,3 +49,4 @@ for line in lines:
 
     s += int(num)
 print(s)
+print(time.time() - start)
