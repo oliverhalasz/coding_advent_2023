@@ -1,7 +1,7 @@
 SUBSTINGS = ["one", "two", "three", "four",
              "five", "six", "seven", "eight", "nine"]
 
-with open("C:\Users\Oliver\Documents\coding_advent2023\day1.txt", "r") as f:
+with open("C:/Users/Oliver/Documents/coding_advent2023/day1.txt", "r") as f:
     lines = f.read().split("\n")
 
 s = 0
