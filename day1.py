@@ -29,7 +29,7 @@ for line in lines:
             i = k
             temp_s = str(number)
     num += temp_s
-
+    # Utsó szám
     while 1:
         try:
             int(line[j])
@@ -38,7 +38,7 @@ for line in lines:
             continue
         else:
             break
-    # Első írt szám
+    # Utsó írt szám
     temp_s = line[j]
     for number, substring in enumerate(SUBSTINGS, 1):
         k = line.rfind(substring)
