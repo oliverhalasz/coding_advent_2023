@@ -1,14 +1,16 @@
 import regex as re
+import time
 
 with open("C:/Users/Oliver/Documents/coding_advent2023/day2.txt", "r") as f:
     lines = f.read().split("\n")
+
+start = time.time()
 
 sum_of_powers = 0
 for line in lines:
     max_reds = 0
     max_greens = 0
     max_blues = 0
-    # Hányadik játék
 
     pulls = line.split(";")
 
@@ -33,3 +35,4 @@ for line in lines:
     sum_of_powers += max_reds * max_greens * max_blues
 
 print(sum_of_powers)
+print(time.time() - start)
