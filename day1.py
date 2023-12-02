@@ -50,3 +50,29 @@ for line in lines:
     s += int(num)
 print(s)
 print(time.time() - start)
+
+
+
+def recover_calibration_values(calibration_document):
+    # Initialize the sum of calibration values
+    total_sum = 0
+    
+    # Iterate through each line in the calibration document
+    for line in calibration_document:
+        # Extract the first and last digits
+        first_digit = int(line[0])
+        last_digit = int(line[-1])
+        
+        # Combine the digits to form a two-digit number
+        calibration_value = int(str(first_digit) + str(last_digit))
+        
+        # Add the calibration value to the total sum
+        total_sum += calibration_value
+    
+    return total_sum
+
+# Example usage with the provided calibration document
+
+result = recover_calibration_values(lines)
+
+print("The sum of calibration values is:", result)
