@@ -1,10 +1,9 @@
 import regex as re
 import time
 
+start = time.time()
 with open("C:/Users/Oliver/Documents/coding_advent2023/day2.txt", "r") as f:
     lines = f.read().split("\n")
-
-start = time.time()
 
 REDS, GREENS, BLUES = 12, 13, 14
 
